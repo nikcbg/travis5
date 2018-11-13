@@ -1,6 +1,8 @@
 language: generic
 dist: xenial
 sudo: required
+script:
+- bash test.sh
 
 deploy:
   provider: releases
@@ -10,5 +12,3 @@ deploy:
   on:
     repo: nikcbg/travis5
     tag: true 
-script:
-- bash test.sh
